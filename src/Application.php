@@ -68,7 +68,7 @@ class Application
         $this->container = $container;
     }
 
-    public function configAutoload($path = null, $excepts = ['router'])
+    public function configAutoload($path = null, $excepts = ['router', 'config'])
     {
         if(is_null($path)) {
             $path = $this->basePath . '/config';
