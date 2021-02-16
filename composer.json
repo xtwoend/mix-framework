@@ -1,0 +1,42 @@
+{
+    "name": "xtwoend/mix-framework",
+    "description": "Hyperf Stater Kit",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Abdul Hafidz Anshari",
+            "email": "aditans88@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "ext-swoole": ">=4.5",
+        "hyperf/nano": "^1.0",
+        "hyperf/database": "^2.1",
+        "hyperf/db-connection": "^2.1",
+        "hyperf/model-cache": "^2.1",
+        "hyperf/redis": "^2.1",
+        "hyperf/cache": "^2.1",
+        "hyperf/tracer": "^2.1"
+    },
+    "require-dev": {
+        "hyperf/testing": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mix\\": "src/"
+        },
+        "files": [
+            "src/Functions.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "hyperf": {
+            "config": "Mix\\ConfigProvider"
+        }
+    },
+    "license": "MIT"
+}
