@@ -2,7 +2,9 @@
 
 namespace Mix;
 
+use Mix\ConfigFactory;
 use Mix\Command\RoutesCommand;
+use Hyperf\Contract\ConfigInterface;
 use Mix\Command\VendorPublishCommand;
 
 class ConfigProvider
@@ -11,7 +13,7 @@ class ConfigProvider
     {
         return [
             'dependencies' => [
-                
+                ConfigInterface::class => ConfigFactory::class
             ],
             'commands' => [
                 RoutesCommand::class,

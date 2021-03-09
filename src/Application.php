@@ -70,11 +70,11 @@ class Application
 
     public function configAutoload($path = null, $excepts = ['router', 'config'])
     {
-        if(is_null($path)) {
+        if (is_null($path)) {
             $path = $this->basePath . '/config';
         }
 
-        if(! is_dir($path)) {
+        if (! is_dir($path)) {
             throw new RuntimeException("Path config not accessable");
         }
 
