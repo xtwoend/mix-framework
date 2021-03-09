@@ -11,8 +11,10 @@ declare(strict_types=1);
  */
 namespace Mix;
 
-use Psr\Container\ContainerInterface;
+use Hyperf\Config\Config;
+use Hyperf\Config\ProviderConfig;
 use Symfony\Component\Finder\Finder;
+use Psr\Container\ContainerInterface;
 
 class ConfigFactory
 {
