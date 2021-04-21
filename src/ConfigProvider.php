@@ -13,7 +13,7 @@ class ConfigProvider
     {
         return [
             'dependencies' => [
-                ConfigInterface::class => ConfigFactory::class
+                // 
             ],
             'commands' => [
                 RoutesCommand::class,

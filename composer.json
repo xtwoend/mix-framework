@@ -11,7 +11,12 @@
     "require": {
         "php": ">=7.3",
         "ext-swoole": ">=4.5",
-        "hyperf/nano": "^1.0",
+        "hyperf/command": "^2.1",
+        "hyperf/config": "^2.1",
+        "hyperf/di": "^2.1",
+        "hyperf/framework": "^2.1",
+        "hyperf/http-server": "^2.1",
+        "hyperf/utils": "^2.1",
         "hyperf/database": "^2.1",
         "hyperf/db-connection": "^2.1",
         "hyperf/model-cache": "^2.1",
@@ -20,7 +25,12 @@
         "hyperf/tracer": "^2.1"
     },
     "require-dev": {
-        "hyperf/testing": "^2.1"
+        "swoole/ide-helper": "^4.5",
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "mockery/mockery": "^1.0",
+        "phpstan/phpstan": "^0.12",
+        "hyperf/devtool": "~2.1.0",
+        "hyperf/testing": "~2.1.0"
     },
     "autoload": {
         "psr-4": {
