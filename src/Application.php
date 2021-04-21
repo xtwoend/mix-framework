@@ -2,6 +2,8 @@
 
 namespace Mix;
 
+use Hyperf\Contract\ApplicationInterface;
+
 class Application
 {
     public $app;
@@ -22,7 +24,7 @@ class Application
     public function createApp()
     {
         $container = $this->basePath . '/config/container.php';
-        $this->app = $container->get(Hyperf\Contract\ApplicationInterface::class);
+        $this->app = $container->get(ApplicationInterface::class);
     }
     
     /**
